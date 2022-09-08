@@ -34,21 +34,14 @@
     border: 2px solid rgb(1, 1, 1);
 }
 
-.cinnamon-heading{
-    padding-top: 8px;
-    size: 20px;
-}
 
-#product-div-padding{
+.product-div-padding{
     padding: 4px 4px 4px 4px;
     margin-top: 16px;
     margin-bottom: 16px;
-    
+    text-align: center;
 }
 
-#cin-heading{
-    size: 50px;
-}
 
 .product-div-center{
     padding: 4px 4px 4px 4px;
@@ -59,9 +52,6 @@
     margin-right: auto;
 }
 
-.cinnamon-heading{
-    size: 24px;
-}
 
 .product-div-center:hover {
 	background-color: rgb(240, 247, 29);
@@ -72,19 +62,8 @@
     width: 300px;
     height: 300px;
     border: 2px solid rgb(1, 1, 1);
-}
-
-.button-parent{
-    display: flex;
-    margin-top: 100px;
-}
-
-#price-button{
-    width: 50px;
-}
-
-#price-button{
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cart-image{
@@ -116,7 +95,60 @@ hr{
 a{
     text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+  }
 
 #glazing{
-width: 500px;
+width: 150px;
+margin-top: 4px;
+}
+
+#packsize{
+    width: 150px;
+    margin-top: 4px;
+}
+
+.item-text-margins{
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+
+.remove{
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-top: 4px;
+}
+
+.Dropdown-layout{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    
+}
+
+.selected-image{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+}
+
+.selected-text-margins{
+    width: 200px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select{
+    width: 150px;
+}
+
+.card-total{
+    margin-right: 12px;
+
 }

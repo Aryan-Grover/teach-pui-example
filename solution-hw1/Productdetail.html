@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <title>Bakery Shop</title>
     <link rel="stylesheet" href="HW1.css">
   </head>
 
   <body class="body">
-
+    
     <div class ="center">  <!--. Section 1 .--> 
         <h3> Product Gallery</h3>
         <hr>
     </div> 
-
+    
     <div>  <!--. Section 2 .-->
-        <a href="HW1.html">
+        <a href="index.html">
         <img src="Assets/logo-01.svg" class="logo-thumbnail" />
         </a> 
         <hr>
     </div>
 
 
-    <div> <!--. Code for Products .--> 
-        <h4 class="center"><mark> PRODUCTS</mark></h4>
-        <p class="cart-heading"> <a href="Cart.html">CART</a></p>
-        <p class ="cin-heading"> Original cinnamon rolls<p>
+    <div> <!--. Code for the selected Product .--> 
+            <h4 class="center"><mark> PRODUCTS</mark></h4>
+             <p class="cart-heading"> <a href="Cart.html">CART</a></p>
+            <p class ="cin-heading"> Original cinnamon rolls<p>
 
-         <div class="center">
-            <img src="Assets/original-cinnamon-roll.jpeg" class="product-gallery-image center"/>
-            <div style="margin-left: auto ;margin-right: auto;">
-                <p> Customise our delicious hand-made cinnamon rolls to your liking</p>
+            <div class="selected-image">
+                 <img src="Assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll" class="product-gallery-image"/>
+                 <p class="selected-text-margins" style="text-align: left">
+                Customise our delicious hand-made cinnamon rolls to your liking
+                </p>
             </div>
-            <br>
-        </div>
+        <br>
+        <br>
+
+    </div>
         
-        <div class="center"> <!--. Dropdown 1 .--> 
-            <label for="Glazing">Glazing</label> <br>
-                <select name="Glazing" id="glazing">
-                <option value="Original">Keep Original</option>
-                <option value="Sugar Milk">Sugar Milk</option>
-                <option value="Vanilla Milk">Vanilla Milk</option>
-                <option value="Double chocolate">Double chocolate</option>
-                </select>
-        </div>
+
+        <div class="Dropdown-layout">
+            <div class="Dropdown"> <!--. Dropdown 1 .--> 
+                <label for="Glazing">Glazing</label> <br>
+                    <select name="Glazing" id="glazing">
+                    <option value="Original">Keep Original</option>
+                    <option value="Sugar Milk">Sugar Milk</option>
+                    <option value="Vanilla Milk">Vanilla Milk</option>
+                    <option value="Double chocolate">Double chocolate</option>
+                    </select>
+            </div>
         <br>
 
-        <div class="center"> <!--. Dropdown 2 .-->
-            <label for="Pack Size">Pack Size</label> <br>
-                <select name="Pack Size" id="packsize">
-                <option value="1">1</option>
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="12">12</option>
-                </select>
+            <div class="Dropdown"> <!--. Dropdown 2 .-->
+                <label for="Pack Size">Pack Size</label> <br>
+                    <select name="Pack Size" id="packsize">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    </select>
+            </div>
         </div>
         <br>
+        <br>
 
-        <div class="button parent center"> <!--. button .--> 
-                $2.49
+        <div class="center"> <!--. button .--> 
+                <span class="card-total">$2.49</span> 
             <button class="button-design">
                 <a href="Cart.html" target="_blank"></a>
                 Add to Cart
