@@ -20,6 +20,10 @@
     margin-right: auto;
 }
 
+body{
+    color: black;
+}
+
 .cin-heading{
     size: 16px;
     text-align: center;
@@ -92,9 +96,11 @@ hr{
     cursor: pointer;
 }
 
-a{
+a:visited{
     text-decoration: none;
+    color: black;
 }
+
 
 #glazing{
 width: 150px;
