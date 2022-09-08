@@ -1,0 +1,122 @@
+
+.logo-thumbnail{
+    width: 150px;
+    height: 150px;
+}
+
+.center{
+    text-align: center;
+}
+
+.cart-heading{
+    size: 8px;
+    text-align: center;
+}
+
+.body{
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cin-heading{
+    size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.product-image{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(1, 1, 1);
+}
+
+.cinnamon-heading{
+    padding-top: 8px;
+    size: 20px;
+}
+
+#product-div-padding{
+    padding: 4px 4px 4px 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+}
+
+#cin-heading{
+    size: 50px;
+}
+
+.product-div-center{
+    padding: 4px 4px 4px 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cinnamon-heading{
+    size: 24px;
+}
+
+.product-div-center:hover {
+	background-color: rgb(240, 247, 29);
+    
+}
+
+.product-gallery-image{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(1, 1, 1);
+}
+
+.button-parent{
+    display: flex;
+    margin-top: 100px;
+}
+
+#price-button{
+    width: 50px;
+}
+
+#price-button{
+    width: auto;
+}
+
+.cart-image{
+
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(1, 1, 1);
+
+}
+
+hr{
+    height: 1.5px;
+    background-color: black;
+}
+
+.button-design{
+    border: none;
+    background-color: rgb(240, 247, 29);
+    padding: 6px 16px;
+    border: 1.5px solid rgb(1, 1, 1);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+#glazing{
+width: 500px;
+}
