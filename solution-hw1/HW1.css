@@ -95,11 +95,6 @@ hr{
 a{
     text-decoration: none;
 }
-a:visited {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-
-  }
 
 #glazing{
 width: 150px;
