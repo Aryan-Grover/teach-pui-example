@@ -1,7 +1,7 @@
 
 .logo-thumbnail{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
 }
 
 .center{
@@ -13,12 +13,6 @@
     text-align: center;
 }
 
-.body{
-    width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 body{
     color: black;
@@ -156,4 +150,9 @@ select{
 .card-total{
     margin-right: 12px;
 
+}
+
+
+.flexbox-1{
+    display: flex;
 }
