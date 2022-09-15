@@ -227,6 +227,7 @@ select{
 
 .grow{
     flex: 1 0 auto;
+    padding: 35px;
 }
 
 .emptydiv{
@@ -255,4 +256,13 @@ font-size: 20px;
 
 .cart-text{
     font-size: 24px;
+}
+
+.price-padding{
+    padding: 64px;
+}
+
+.grow2{
+    flex: 1 0 auto;
+    margin-left: 35px;
 }
