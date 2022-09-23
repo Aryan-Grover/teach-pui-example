@@ -53,12 +53,13 @@ for (i = 0; i<allpacks.length; i++) {
   packoptions.appendChild(packoptionitem);
 }
 
+let glazechoice = 0;
+let packchoice = 1;
+
 //function to change the price
 function calculatePrice(element)
 {
   let baseprice = 2.49;
-  let glazechoice = 0;
-  let packchoice = 1;
   let finalprice=0;
 
   const pricechange=element.value;
