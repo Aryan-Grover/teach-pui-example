@@ -85,11 +85,11 @@ function calculatePrice(element)
 
 //Homework-4//
 
-let cart=[]
+let cart=[];
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
-console.log(rollType);
+
 
 document.querySelector(".cin-heading").innerText=rollType + " Cinnamon Roll";
 document.querySelector(".card-total").innerText= rolls[rollType].basePrice;
@@ -107,7 +107,6 @@ class Roll {
 //Function to add item to the cart //
 function AddtoCart(){
   let r = new Roll(rollType,glazeoptions.value,packoptions.value,rolls[rollType].basePrice);
-  console.log(r)
   cart.push(r);
   console.log(cart);
 
