@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Bakery Shop</title>
+    <link rel="stylesheet" href="HW2.css">
+    <script src="rollsData.js" defer></script>
+    <script src="function.js" defer></script>
+  </head>
+
+  <body class="body">
+    
+    <div class="flexbox-1"> <!--. Code for Header .--> 
+
+      <div class="header-left">
+        <a href="index.html">
+          <div class="logo-image">  <!--. Code for Brand Logo .--> 
+            <img src="Assets/logo-01.svg" alt="logo image" class="logo-thumbnail" />
+          </a>
+          </div>
+      </div>
+
+      <div class="header-right">
+        <div> 
+          <div class="nav-links">
+            <div>
+              <h2><span class="heading-spacing"><mark>Products</mark></span></h2> 
+            </div>
+            <div>
+              <h2><a href="Cartpage.html">Cart</h2></a>
+            </div>
+          </div>
+          <hr>
+       </div>
+
+      <div style="margin-top: 64px;">
+        <span class ="cin-heading"> Original Cinnamon Roll</span>
+      </div> 
+    
+    </div>
+
+    </div>
+
+
+    <div class="selected-flex"> <!--. Code for the selected Product .--> 
+        
+        <div class="selected-left">
+            <div class="selected-image">
+                <img src="Assets/original-cinnamon-roll.jpeg" alt="Original Cinnamon Roll" class="product-gallery-image">
+           
+           </div>
+        </div>
+
+        <div class="selected-right">
+            
+            <p class="selected-text-margins">
+                Customise our delicious hand-made cinnamon rolls to your liking
+                </p>
+
+            <br>
+            
+            <div class="Dropdown-layout">
+              <div class="Dropdown"> <!--. Dropdown 1 .--> 
+                      <label for="Glazing">Glazing</label> <br>
+                      <select name="Glazing" id="glazing" onchange="calculatePrice(this)">
+                      </select>
+              </div>
+          </div>
+
+          <br>
+          <br>
+
+            <div class="Dropdown-layout">
+                <div class="Dropdown"> <!--. Dropdown 2 .-->
+                    <label for="Pack Size">Pack Size</label> <br>
+                        <select name="Pack Size" id="packsize" onchange="calculatePrice(this)">
+                        </select>
+                </div>
+            <br>
+            </div>
+
+        
+            <div> <!--. button .--> 
+                <span class="card-total" id="finalprice">$ 2.49</span> 
+            <button class="button-design" onclick="AddtoCart()">
+                <a href="Cart.html" target="_blank"></a>
+                Add to Cart
+            </div>
+            </div>
+            <br>
+    </div>
+  
+    <!----HW 4-->
+
+
+  </body>
+  
+</html>
