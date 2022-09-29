@@ -109,5 +109,4 @@ function AddtoCart(){
   let r = new Roll(rollType,glazeoptions.value,packoptions.value,rolls[rollType].basePrice);
   cart.push(r);
   console.log(cart);
-
 }
