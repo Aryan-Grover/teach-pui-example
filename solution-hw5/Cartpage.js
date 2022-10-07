@@ -1,3 +1,4 @@
+//Roll class
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -11,6 +12,7 @@ let cart = new Set();
 let productList = [];
 let Grandtotal=0.0;
 
+//Cart objects from the homework sheet 
 let Roll1 = new Roll("Original", "Sugar Milk", 1, 2.49);
 let Roll2 = new Roll("Walnut", "Vanilla Milk", 12, 3.49);
 let Roll3 = new Roll("Raisin", "Sugar Milk", 3,  2.99);
@@ -18,7 +20,7 @@ let Roll4 = new Roll("Apple", "Original", 3, 3.49);
 
 productList.push(Roll1, Roll2, Roll3, Roll4);
 
-
+//Glaze class
 class Glaze {
     glazetype;
     glazeprice;
@@ -54,11 +56,12 @@ const twelvepack = new Packs(12, 10);
 let allglazes = [keeporiginal, sugarmilk, vanillamilk, doublechocolate];
 let allpacks = [onepack, threepack, sixpack, twelvepack];
 
-
+//function to calculate price
 function calculatetotalprice(basePrice, rollGlazing, packPrice) {
     return ((basePrice + rollGlazing) * packPrice)
 }
 
+//looping for the template: Updating product info, price, total
 for (let i = 0; i < productList.length; i++) {
 
     let newRoll = productList[i];
@@ -76,6 +79,7 @@ for (let i = 0; i < productList.length; i++) {
     let glazingprice;
     let packPrice = allpacks.find(item => item.packsize == productList[i].size).packprice
 
+    //condition for price
     if(productList[i].glazing == "Original"){
         glazingprice = keeporiginal.glazeprice;
     }
@@ -93,7 +97,7 @@ for (let i = 0; i < productList.length; i++) {
     document.querySelector(".cart-text-final").innerText = "$ " + Grandtotal;
     let c = cartitemClone.querySelector(".cart1-product")
 
-
+    //remove button
     cartitemClone.querySelector("button").onclick = (() => {
         c.remove();
         let rPrice = c.querySelector(".cart-text2").innerText.slice(2);
