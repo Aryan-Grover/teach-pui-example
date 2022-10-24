@@ -85,6 +85,7 @@ function calculatePrice(element) {
 //Homework-4//
 
 let cart = [];
+if(localStorage.getItem("cart")) cart = Array.from(JSON.parse(localStorage.getItem("cart")));
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
@@ -114,5 +115,6 @@ function AddtoCart() {
   let basePrice = rolls[rollType].basePrice;
   let r = new Roll(rollType, glazing, packSize, basePrice);
   cart.push(r);
+  localStorage.setItem('cart', JSON.stringify(cart)); //array to json object and then add it to local storage
   console.log(cart);
 }

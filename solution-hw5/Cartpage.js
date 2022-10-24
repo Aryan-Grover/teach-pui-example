@@ -10,15 +10,16 @@ class Roll {
 
 let cart = new Set();
 let productList = [];
+if(localStorage.getItem("cart")) productList = Array.from(JSON.parse(localStorage.getItem("cart"))); //get element from array convert it json object and then convert it to an array
 let Grandtotal=0.0;
 
 //Cart objects from the homework sheet 
-let Roll1 = new Roll("Original", "Sugar Milk", 1, 2.49);
-let Roll2 = new Roll("Walnut", "Vanilla Milk", 12, 3.49);
-let Roll3 = new Roll("Raisin", "Sugar Milk", 3,  2.99);
-let Roll4 = new Roll("Apple", "Original", 3, 3.49);
+// let Roll1 = new Roll("Original", "Sugar Milk", 1, 2.49);
+// let Roll2 = new Roll("Walnut", "Vanilla Milk", 12, 3.49);
+// let Roll3 = new Roll("Raisin", "Sugar Milk", 3,  2.99);
+// let Roll4 = new Roll("Apple", "Original", 3, 3.49);
 
-productList.push(Roll1, Roll2, Roll3, Roll4);
+// productList.push(Roll1, Roll2, Roll3, Roll4);
 
 //Glaze class
 class Glaze {
@@ -34,8 +35,8 @@ class Glaze {
 //glazing object
 const keeporiginal = new Glaze("Keep Original", 0);
 const sugarmilk = new Glaze("Sugar Milk", 0);
-const vanillamilk = new Glaze("Vanilla Milk", 0.50);
-const doublechocolate = new Glaze("Double Chocolate", 1.50);
+const vanillamilk = new Glaze("Vanilla milk", 0.50);
+const doublechocolate = new Glaze("Double chocolate", 1.50);
 
 //pack constructor
 class Packs {
@@ -104,6 +105,7 @@ for (let i = 0; i < productList.length; i++) {
         let rTotal = document.querySelector(".cart-text-final").innerText.slice(2);
         document.querySelector(".cart-text-final").innerText = "$ "+ (rTotal-rPrice).toFixed(2);
         cart.delete(newRoll);
+        localStorage.setItem('cart', JSON.stringify(Array.from(cart)));
         console.log(cart);
 })
 
