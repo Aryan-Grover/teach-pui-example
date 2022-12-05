@@ -1,113 +1,115 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.bg{
-   background-color: #101014;
+.bg {
+    background-color: #101014;
 }
 
-.logo-color{
+.logo-color {
     color: #F3F1D3;
 }
 
-.navbar{
+.navbar {
     padding: 24px;
 
 }
 
-.navbar-toggler:focus{
-    box-shadow:none;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
-@media(max-width:768px){
-    .ul-bg{
+@media(max-width:768px) {
+    .ul-bg {
         background-color: #26272b;
-    } 
+    }
 }
 
-nav .nav-item a:hover{
-    color: #f1f1f1 !important;
+nav .nav-item a:hover {
+    color: #f1f1f1;
 
 }
 
-nav .nav-item a:active{
+nav .nav-item a:active {
     color: #ffffff;
     text-decoration: underline !important;
 
 }
 
 
-.navlink-color{
+.navlink-color {
     color: #8E8E8E;
 }
 
 
-.profile-background{
+.profile-background {
     background-color: #16171C;
 }
 
-.profile-heading{
+.profile-heading {
     font-size: 18px;
     line-height: 150%;
     font-kerning: 4%;
     color: #EFEFEF;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
-.profile-content{
+.profile-content {
     padding-top: 16px;
     padding-left: 24px;
 }
 
-.profile-text{
+.profile-text {
     font-size: 16px;
     font-kerning: 4%;
     font-weight: 200;
     color: #EFEFEF;
-    margin-top: 4px;
+    margin-top: 2px;
+    margin-bottom: 12px;
 }
 
-.icon-div{
+.icon-div {
     margin-top: 32px;
     margin-bottom: 24px;
 
 }
 
-.icon-spacing{
+.icon-spacing {
     margin-right: 16px;
+    text-decoration: none;
 }
 
-.profile-padding{
+.profile-padding {
     margin-bottom: 24px;
 }
 
-#Carousel{
+#Carousel {
     margin-top: 64px;
     margin-bottom: 80px;
     width: 100%;
 }
 
-.announcement-link{
+.announcement-link {
     color: #ffffff;
 }
 
-.announcement-link:hover{
+.announcement-link:hover {
     color: #ffffff;
     font-weight: bold;
 }
 
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 792px) {
-    .scale-head{font-size: 12px;}
+@media only screen and (min-width : 320px) and (max-width : 792px) {
+    .scale-head {
+        font-size: 12px;
+    }
 }
 
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 792px) {
-    .scale-text{font-size: 10px;}
+@media only screen and (min-width : 320px) and (max-width : 792px) {
+    .scale-text {
+        font-size: 10px;
+    }
 }
 
 .btn {
@@ -119,55 +121,132 @@ and (max-width : 792px) {
     cursor: pointer;
     color: #9CA0B1;
     border-radius: 0%;
-  }
+}
 
-  .btn:hover {
+.btn:hover{
     color: #ffffff;
-  }
+}
 
-  .btn:active{
-    color: white;
+.btn:active,.btn:target {
+    color: white !important;
     border: #9CA0B1;
-  }
+}
 
-  
-  .category-head{
+
+.category-head {
     margin: 30px 0;
-  }
+}
 
-  .category-head ul{
+.category-head ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
+}
 
-  .category-title{
+.category-title {
     flex: 0 0 calc(16.6667% - 10px);
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background: #a8a8a8;
     padding: 12px;
     color: #fff;
     margin: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
-  }
+}
 
-.category-title:hover{
+.category-title:hover {
     opacity: 0.7;
 }
-.category-title li{
+
+.category-title li {
     padding: 0 10px;
 }
-.category-title span{
+
+.category-title span {
     color: #222;
 }
 
-.university-padding{
+.university-padding {
     margin-bottom: 32px;
 }
 
 .show {
-    display: block;
-  }
+    display: block !important;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.profile-margin {
+    margin-top: 40px;
+}
+
+.active-nav {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.active-nav:visited {
+    color: white !important;
+}
+
+.category-name-architecture {
+    padding: 6px 12px 6px 12px;
+    background-color: #F7EFFF;
+    font-size: 12px;
+    font-weight: 600;
+    color: #8638E5;
+    border-radius: 16px;
+}
+
+.category-name-design {
+    padding: 6px 12px 6px 12px;
+    background-color: #E8F1FF;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1A66D1;
+    border-radius: 16px;
+}
+
+.category-name-computer-sciences {
+    padding: 6px 12px 6px 12px;
+    background-color: #FFF2F1;
+    font-size: 12px;
+    font-weight: 600;
+    color: #A9042F;
+    border-radius: 16px;
+}
+
+.category-name-others {
+    padding: 6px 12px 6px 12px;
+    background-color: #F8FFF6;
+    font-size: 12px;
+    font-weight: 600;
+    color: #058C43;
+    border-radius: 16px;
+}
+
+.category-name-Psychology {
+    padding: 6px 12px 6px 12px;
+    background-color: #FFFAED;
+    font-size: 12px;
+    font-weight: 600;
+    color: #EA920E;
+    border-radius: 16px;
+}
+
+.uni-text {
+    font-size: 16px;
+    font-kerning: 4%;
+    font-weight: 200;
+    color: #EFEFEF;
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+
+.uni-link{
+    text-decoration: none;
+}
