@@ -12,7 +12,7 @@ function filterSelection(c) {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("activeFilter");
     console.log(current)
     for (var j = 0; j < current.length; j++) {
@@ -22,3 +22,4 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " activeFilter";
   });
 }
+
